@@ -1,0 +1,2 @@
+#Att_8  
+Escreva uma função que mostre a tabuada em um parágrafo no documento HTML de um número informado pelo usuário. Por exemplo, considerando que o número lido é 2, 

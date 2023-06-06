@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextArea</title>
+</head>
+<body>
+    <label for="comentarios">Comentários</label><br>
+    <textarea id="comentarios" cols="30" rows="10" maxlength="150" onkeyup="atualiza()"></textarea>
+
+    <p id="restante">Restam 150 caracteres.</p>
+
+    <script>
+        function atualiza(){
+            let quant = document.getElementById("comentarios").value.length;
+
+            document.getElementById("restante").innerText = `Restam ${150 - quant} caracteres.`;
+
+        }
+    </script>
+</body>
+</html>

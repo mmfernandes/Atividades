@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    <label for="segunda_feira">Seg</label>
+    <input type="checkbox" name="dia_semana" id="segunda_feira" value="Segunda-feira">
+
+    <label for="terca_feira">Ter</label>
+    <input type="checkbox" name="dia_semana" id="terca_feira" value="Terça-feira">
+
+    <label for="quarta_feira">Qua</label>
+    <input type="checkbox" name="dia_semana" id="quarta_feira" value="Quarta-feira">
+
+    <button onclick="mostrar()">Mostrar</button>
+
+    <script>
+        function mostrar(){
+            let marcados = document.getElementsByName("dia_semana");
+
+            for(let i = 0; i < marcados.length; i++){
+                if(marcados[i].checked){
+                    alert(`Você selecionou: ${marcados[i].value}`);
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
